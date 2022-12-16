@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+
+
+
+
+/*以下，404ページ*/
+
+
+
+
+
+#e404 {
+	display: block;
+
+}
+
+#e404 h1{
+	padding: 200px 200px 40px;
+	font-size: 3.5rem;
+}
+
+#e404 p{
+	padding-left: 300px;
+	padding-bottom: 150px;
+	font-size: 2rem;
+	font-family: 'Noto Serif JP';
+}
+
+@media screen and (max-width:800px) {
+
+	#e404 h1{
+		padding: 200px 100px 40px;
+	}
+	
+	#e404 p{
+		padding-left: 150px;
+		padding-bottom: 150px;
+	}
+
+}
+
+@media screen and (max-width:550px) {
+
+	#e404 h1{
+		padding: 200px 50px 40px;
+	}
+	
+	#e404 p{
+		padding-left: 70px;
+	}
+
+}
+
+@media screen and (max-width:470px) {
+
+	#e404 h1{
+		font-size: 2.3rem;
+	}
+	
+	#e404 p{
+		font-size: 1.6rem;
+		padding-left: 60px;
+	}
+
+}

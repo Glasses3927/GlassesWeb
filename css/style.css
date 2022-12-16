@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+
+
+
+
+/*以下，HPのTOP部分*/
+
+
+
+
+
+.HP-description {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/pc_and_note.jpg");
+	opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+}
+
+.HP-description:before {
+	content: '';
+	background: inherit;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	position: absolute;
+	top: 5px;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+	z-index: -1;
+}
+
+.toptheme {
+    padding: 300px 0 100px 100px;
+}
+
+.code001 {
+    display: block;
+    font-size: 5rem;
+    font-family: 'Montserrat';
+    color: white;
+    letter-spacing: 10px;
+}
+
+.code002 {
+    color: white;
+    padding-left: 60px;
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans';
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+/*以下，HPの説明部分*/
+
+
+
+
+
+.about {
+	padding: 100px;
+}
+
+.about-theme {
+	display: flex;
+}
+
+.ja {
+	letter-spacing: 0.5rem;
+	font-size: 3.5rem;
+	writing-mode: vertical-rl;
+	margin-left: 10px;
+	font-family: 'Noto Serif JP';
+}
+
+.en {
+	letter-spacing: 0rem;
+	font-size: 1.75rem;
+	writing-mode: vertical-rl;
+	margin-top: 30px;
+	font-family: 'Noto Serif JP';
+}
+
+.about-content {
+	margin-top: 35px;
+	padding-left: 200px;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-family: 'Noto Serif JP';
+
+}
+
+.about-content p {
+	animation-name: smoothAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+	margin-top: 2.5rem;
+}
+
+.about-sum {
+	margin-top: 55px;
+	font-family: 'Noto Serif JP';
+	text-align: right;
+}
+
+.about-sum .bold {
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+
+.about-sum .medium {
+	font-weight: 400;
+	color: black;
+	font-size: 1.5rem;
+	
+}
+
+.about.right {
+	text-align: right;
+	background-color:#353535;
+	color: white;
+}
+
+.about-theme.right {
+	justify-content: flex-end;
+}
+
+.about-content.right {
+	justify-content: flex-end;
+	padding-right: 200px;
+	padding-left: 0;
+}
+
+.about-sum.right {
+	text-align: left;
+}
+
+.about.right .medium {
+	color: #bbbbbb;
+}
+
+
+
+
+
+/*以下，レスポンシブ対応*/
+
+
+
+
+
+@media screen and (max-width:1200px) {
+
+	.about-content {
+	padding-left: 100px;
+	}
+	
+	.about-content.right {
+		padding-right: 100px;
+	}
+
+}
+
+
+@media screen and (max-width:860px) {
+
+    .code001 {
+        text-align: center;
+    }
+    
+    .toptheme {
+        padding-left: 0;
+    }
+
+    .code002 {
+        font-size: 1.7rem;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+
+	.about-content {
+		padding-left: 0;
+	}
+	
+	.about-content.right {
+		padding-right: 0;
+	}
+	
+	.about {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	
+}
+
+
+@media screen and (max-width:550px) {
+	
+	.about-sum .bold {
+		font-size: 2.5rem;
+	}
+	
+	.about-sum .medium {
+		font-size: 1.5rem;
+	}
+	
+}
+
+
+@media screen and (max-width:500px) {
+
+    .code001 {
+        font-size: 4rem;
+		letter-spacing: 7px;
+    }
+
+    .code002 {
+        font-size: 1.2rem;
+        padding-left: 7%;
+		padding-right: 7%;
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+	
+	.about-sum .bold {
+		font-size: 2rem;
+	}
+	
+	.about-sum .medium, .about-content {
+		font-size: 1.15rem;
+	}
+	
+	.about {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+}
+
+
+
+
+
+/*以下，blur部分*/
+
+
+
+
+
+
+.blur{
+	animation-name:blurAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+	opacity: 0;
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+	opacity: 1;
+  }
+}
+ 
+.blurTrigger{
+    opacity: 0;
+}
