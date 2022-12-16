@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">{{ .Title }} | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">Glässesのブログです．</div>
+</div>
+<div class="site-content">
+    <div class="post-top">
+        <div class="post-date">{{ .Date.Format "2006-01-02" }}</div>
+        {{ with .Params.tags }}{{ range . }} <a class="tag" href="/tags/"><p>#{{ . }}</p></a>{{ end }}{{ end }}
+    </div>
+    <div class="post-toptitle">
+        <a href="{{ .Site.BaseURL }}posts/" class="return-btn"><i class="fa-regular fa-circle-down fa-rotate-90"></i></a>
+        <div class="post-title">{{ .Title }}</div>
+   </div>
+    <article>
+        {{ .Content }}
+    </article>
+</div>
+{{ end }}

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">連絡先 | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">Glässesの連絡先ページです．</div>
+</div>
+<section class="contact">
+	<div class="contact-theme">
+		<p class="en">Contact</p>
+		<p class="ja">連絡先</p>
+	</div>
+	<div class="contact-content">
+		{{ .Content }}
+	</div>
+</section>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">ホーム | Glässes's WEB</div>
+	<div id="share-url">{{ .Site.BaseURL }}</div>
+	<div id="share-text">Glässesのホームページです．</div>
+</div>
+<section class="HP-description">
+	<div class="toptheme">
+		<h1 class="code001">Glässes's<br>WEB</h1>
+	</div>
+	<section class="code002">▼Find Yourself. This is where I want to be?</section>
+</section>
+
+<section class="about">
+	{{ .Content }}
+</section>
+{{ end }}

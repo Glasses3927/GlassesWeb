@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+
+
+
+
+/*以下，profile部分*/
+
+
+
+
+
+.profile {
+	padding: 100px;
+}
+
+
+.ja {
+	letter-spacing: 0.5rem;
+	font-size: 3.5rem;
+	margin-left: 10px;
+	font-family: 'Noto Serif JP';
+	font-weight: 600;
+}
+
+.en {
+	letter-spacing: 0rem;
+	font-size: 1.75rem;
+	font-family: 'Noto Serif JP';
+}
+
+.profile-content {
+	margin-top: 35px;
+	padding-left: 200px;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-family: 'Noto Serif JP';
+}
+
+.profile-content thead {
+	display: none;
+}
+
+.profile-content td:first-of-type {
+	width: 10rem;
+}
+
+.profile-content ul {
+	margin-left: 30px;
+}
+
+.profile-content p{
+	margin-bottom: 2.5rem;
+}
+
+
+
+
+
+/*以下，SPthanks部分*/
+
+
+
+
+.scroll {
+	margin: auto;
+	width: 100%;
+	color: #666666;
+	overflow: hidden;
+	background-color: white;
+}
+
+.thanks-content p {
+	font-family: 'Sawarabi Gothic', 'Noto Sans JP', Meiro, sans-serif, 'Hiragino Kaku Gothic ProN';
+	font-size: 1.8rem;
+	display: flex;
+	white-space: nowrap;
+	line-height: 1em;
+	animation: scrollAnime 15s linear infinite both;
+	margin-bottom: 50px;
+}
+
+.thanks-content {
+	display: flex;
+	align-items: center;
+}
+
+@keyframes scrollAnime{
+	from {transform: translateX(0)}
+	to {transform: translateX(-100%)}
+}
+
+.SPthanks .ja {
+	margin-bottom: 80px;
+	letter-spacing: 0;
+}
+
+.scroll>p {
+	color: black; 
+	font-size: 1.5rem;
+	margin-left: 50px;
+	margin-top: 30px;
+	font-family: 'Noto Serif JP';
+	line-height: 2rem;
+}
+
+
+
+
+
+/*以下，レスポンシブ対応*/
+
+
+
+
+
+@media screen and (max-width:1250px) {
+	
+	.profile-content {
+	padding-left: 100px;
+	}
+
+}
+
+
+@media screen and (max-width:860px) {
+
+	.profile-content {
+		padding-left: 30px;
+	}
+	
+	.profile {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+	
+	.scroll>p {
+		margin-left: 0;
+	}
+	
+}
+
+
+@media screen and (max-width:600px) {
+
+	.profile-content {
+		padding-left: 0;
+	}
+	
+	.profile {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+}
+
+
+@media screen and (max-width:500px) {
+	.scroll>p {
+		font-size: 1.3rem;
+	}
+
+}
+
+
+
+@media screen and (max-width:450px) {
+	
+	.profile {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.profile-theme {
+		margin-left: 10px;
+	}
+	
+	.profile-content {
+		font-size: 1.3rem;
+	}
+
+	.profile-content table {
+		margin-left: 20px;
+	}
+	
+	.ja {
+		font-size: 3rem;
+	}
+	
+	.en {
+		font-size: 1.5rem;
+	}
+	
+	.thanks-content p {
+		font-size: 1.3rem;
+		margin-bottom: 30px;
+	}
+	
+	.SPthanks {
+		display: none;
+	}
+	
+}

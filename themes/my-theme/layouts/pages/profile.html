@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">プロフィール | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">Glässesのプロフィールページです．</div>
+</div>
+{{ .Content }}
+{{ end }}

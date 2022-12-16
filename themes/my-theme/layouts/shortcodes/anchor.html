@@ -1,0 +1,3 @@
+<a {{ with .Get "class"}} class="{{.}}"{{ end }} {{ with .Get "id"}} id="{{.}}"{{ end }} href="{{ .Get "href"}}">
+    {{ .Inner }}
+</a>

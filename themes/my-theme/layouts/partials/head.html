@@ -1,0 +1,37 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/reset.css">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/base.css">
+    {{ if eq .Layout "profile" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/profile.css">
+    {{ else if eq .Layout "portfolio" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    {{ else if eq .Layout "real" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/real.css">
+    {{ else if eq .Layout "blog" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/blog.css">
+    {{ else if eq .Layout "contact" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/contact.css">
+    {{ else if eq .Section "posts" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/blog.css">
+    {{ else if eq .Kind "taxonomy" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/list.css">
+    {{ else if eq .Kind "404" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/404.css">
+    {{ else }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style.css">
+    {{ end }}
+
+    {{ if not .Site.IsServer }}
+        {{ partial "googleanalytics.html" . -}}
+    {{ end }}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif:wght@700&family=Sawarabi+Gothic&family=Montserrat&family=Noto+Serif+JP:wght@400;600;800&family=Josefin+Sans&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ece971f498.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/logo.png" type="image/png">
+</head>

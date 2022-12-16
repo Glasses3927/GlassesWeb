@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+
+
+
+
+/*以下，blogの単一ページ部分*/
+
+
+
+
+
+.site-content{
+	padding: 150px 100px;
+}
+
+.post-date {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 30px;
+	font-size: 1.4rem;
+	font-family: 'Open Sans';
+	align-items: flex-end;
+	height: 3.5rem;
+	line-height: 3.5rem;
+}
+
+.post-top .tag {
+	display: inline-block;
+	font-family: 'Segoe UI';
+	font-weight: 500;
+	font-size: 1.6rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	margin-left: 15px;
+}
+
+.post-top .tag p {
+	color: #1877f2;
+}
+
+.post-top .tag p:hover {
+	text-decoration: underline;
+}
+
+
+
+.post-toptitle {
+	margin-top: 30px;
+}
+
+.post-title {
+	display: inline-block;
+	font-family: 'Yu Gothic', 'Noto Sans JP';
+	font-weight: bold;
+	font-size: 4rem;
+	line-height: 50px;
+	height: 50px;
+	vertical-align: bottom;
+}
+
+.return-btn {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	color: black;
+	font-size: 50px;
+	margin-right: 20px;
+}
+
+.site-content article {
+	padding: 0 30px 0;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-family: "Noto Serif JP";
+	margin-top: 35px;
+}
+
+.site-content article h1{
+	font-size: 3rem;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	margin: 60px 15px 30px;
+}
+
+.site-content article h2{
+	font-size: 2.5rem;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	margin: 35px 12px 17px;
+}
+
+.site-content article p{
+	font-size: 1.6rem;
+	margin-bottom: 1.5rem;
+}
+
+.site-content article ul{
+	margin-bottom: 1rem;
+}
+
+.site-content article li{
+	margin-left: 4rem;
+}
+
+.site-content article ol li{
+	margin-bottom: 5px;
+	font-size: 1.6rem;
+}
+
+.site-content article div {
+	margin: 10px 0;
+}
+
+.site-content article strong{
+	font-family: 'Noto Sans JP';
+}
+
+.site-content thead tr {
+	line-height: 3rem;
+	border-collapse: collapse;
+	border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.site-content tbody tr td:first-of-type {
+	width: 13rem;
+}
+
+.YT {
+	display: inline-block;
+}
+
+
+
+
+
+
+.remark {
+	font-family: 'Noto Sans JP';
+	font-weight: bold;
+	background-color: rgb(220, 220, 220);
+	margin: 20px 50px;
+	padding: 7px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blog {
+	padding: 100px;
+	background-color: #f8f8f8;
+}
+
+
+.ja {
+	letter-spacing: 0.5rem;
+	font-size: 3.5rem;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	font-family: 'Noto Serif JP';
+	font-weight: 600;
+}
+
+.en {
+	letter-spacing: 0rem;
+	font-size: 1.75rem;
+	font-family: 'Noto Serif JP';
+}
+
+.blog-content {
+	padding-left: 200px;
+	margin-top: 3px;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	font-family: 'Noto Serif JP';
+	transition: 0.2s;
+}
+
+.post {
+	padding: 20px 30px 20px;
+	background-color: white;
+}
+
+.post .tag {
+	display: inline-block;
+	font-family: 'Segoe UI';
+	font-weight: 500;
+	padding: 3px 6px;
+	margin-right: 5px;
+}
+
+.post .tag p {
+	color: #1877f2;
+}
+
+.post .tag p:hover {
+	text-decoration: underline;
+}
+
+
+.post .date {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-family: 'Open Sans';
+	margin-bottom: 9px;
+	margin-right: 30px;
+}
+
+
+.post .title {
+	display: block;
+	position: relative;
+	font-family: 'Yu Gothic', 'Noto Sans JP';
+	font-weight: bold;
+	font-size: 2.3rem;
+	margin-bottom: 7px;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+
+.post .summary {
+	color: rgb(150, 150, 150)
+}
+
+
+.blog-content a:hover {
+	opacity: 0.7;
+}
+
+.site-content article a {
+	color: #285aeb;
+}
+
+.site-content article a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/*以下，レスポンシブ（blog一覧）対応*/
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+	
+	.blog-content {
+		padding-left: 100px;
+	}
+
+}
+
+
+@media screen and (max-width:860px) {
+
+	.blog {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+
+	.blog-content {
+		padding-left: 30px;
+	}
+
+}
+
+
+@media screen and (max-width:700px) {
+	
+	.blog-content {
+		padding-left: 0;
+	}
+
+	.blog-content .summary {
+		font-size: 1.3rem;
+	}
+	
+}
+
+
+@media screen and (max-width:500px) {
+
+	.blog {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.post {
+		padding: 10px 20px;
+	}
+
+	.blog-content .title {
+		font-size: 1.6rem;
+	}
+
+	.blog-content .summary {
+		display: none;
+	}
+
+	.blog-content .date {
+		font-size: 1.2rem;
+		margin-right: 20px;
+		margin-bottom: 5px;
+	}
+
+}
+
+
+
+@media screen and (max-width:450px) {
+	
+	.blog {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.blog-content .tag {
+		margin: 0;
+		padding: 3px;
+	}
+
+}
+
+
+
+
+
+
+/*以下，レスポンシブ（blog単一ページ）対応*/
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+		
+	.YT {
+		width: 100%;
+		aspect-ratio: 16/9;
+	}
+	
+	.YT iframe{
+		width: 100%;
+		height: 100%;
+	}
+	
+}
+
+@media screen and (max-width:800px) {
+	
+	.site-content{
+		padding: 150px 70px;
+	}
+	
+}
+
+@media screen and (max-width:700px) {
+	
+	.site-content{
+		padding: 100px 40px;
+	}
+
+	.post-toptitle {
+		margin-top: 10px;
+	}
+
+	.post-title {
+		font-size: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+	}
+
+	.return-btn {
+		height: 3rem;
+		width: 3rem;
+		line-height: 3rem;
+		font-size: 3rem;
+	}
+
+	.site-content article h1 {
+		font-size: 2.7rem;
+	}
+
+	.site-content article h2 {
+		font-size: 2.2rem;
+	}
+
+	.site-content article p, 
+	.site-content article ul li, 
+	.site-content article ol li {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+
+	.site-content article table {
+		font-size: 1.2rem;
+	}
+
+	.site-content tbody tr td:first-of-type {
+		width: 9rem;
+	}
+
+	.site-content article li {
+		margin-top: 7px;
+	}
+
+	.remark {
+		margin: 20px 30px;
+	}
+
+}
+
+
+@media screen and (max-width:550px) {
+	
+	.site-content{
+		padding: 100px 30px;
+	}
+
+	.site-content article {
+		padding: 0 15px;
+	}
+
+	.post-title {
+		font-size: 2.8rem;
+		height: 2.8rem;
+		line-height: 2.8rem;
+	}
+
+	.return-btn {
+		height: 2.8rem;
+		width: 2.8rem;
+		line-height: 2.8rem;
+		font-size: 2.8rem;
+	}
+
+	.site-content article h1 {
+		font-size: 2.5rem;
+	}
+
+	.site-content article h2 {
+		font-size: 2rem;
+	}
+
+	.remark {
+		padding: 7px 15px;
+		margin: 20px 0;
+		font-size: 1.5rem;
+	}
+
+}
+
+@media screen and (max-width:450px) {
+
+	.post-toptitle a{
+		position: absolute;
+		top: 105px;
+		left: 20px;
+	}
+
+	.post-date {
+		margin-left: 55px;
+		margin-right: 10px;
+	}
+
+	.post-title {
+		margin-left: 20px;
+	}
+
+	.site-content {
+		padding: 100px 10px;
+	}
+
+	.site-content article h1 {
+		margin: 60px 5px 25px;
+	}
+
+	.site-content article h2 {
+		margin: 35px 5px 17px;
+	}
+
+}

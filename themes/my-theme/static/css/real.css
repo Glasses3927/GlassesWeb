@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+
+
+
+/*以下，ﾎﾝﾈ部分*/
+
+
+
+
+
+.real {
+	padding: 100px;
+}
+
+
+.ja {
+	letter-spacing: 0.5rem;
+	font-size: 3.5rem;
+	font-family: 'Noto Serif JP';
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.en {
+	letter-spacing: 0rem;
+	font-size: 1.75rem;
+	font-family: 'Noto Serif JP';
+	text-align: center;
+}
+
+
+.real-container {
+	margin: 0 auto 0;
+	width: 800px;
+	border-left: 1px solid rgb(230, 240, 240);
+	border-right: 1px solid rgb(230, 240, 240);
+}
+
+.backg img{
+	width: 600px;
+	height: auto;
+}
+
+.backg, .name, .username {
+	text-align: center;
+}
+
+.logoimg {
+	height: 100px;
+	width: 100px;
+	margin: 0 auto 0;
+	background-color: white;
+	border-radius: 50px;
+	border: 0.5px solid white;
+}
+
+.logoimg, .name, .username {
+	position: relative;
+	top: -50px;
+}
+
+.logoimg img{
+	height: 100px;
+	width: 100px;
+}
+
+.name p {
+	display: inline-block;
+	position: relative;
+	font-size: 3rem;
+}
+
+.name p::after{
+	content: '✓';
+	display: inline-block;
+	color: white;
+	background-color: #1da1f2;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 1.3rem;
+	line-height: 20px;
+	position: absolute;
+	top: 8px;
+	right: -25px;
+}
+
+.username {
+	font-size: 1.7rem;
+}
+
+.real-contents p{
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-left: 5px;
+	padding: 20px;
+	border-bottom: 1px solid rgb(239, 243, 244);
+}
+
+.real-contents p::first-line {
+	font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+	
+	.real {
+		padding: 100px 0;
+	}
+	
+}
+
+
+@media screen and (max-width:860px) {
+
+	.real-container {
+		width: 85vw;
+	}
+
+	.backg img {
+		width: 75vw;
+		height: auto;
+	}
+
+}
+
+
+@media screen and (max-width:600px) {
+
+	.ja {
+		font-size: 3rem;
+		margin-bottom: 40px;
+	}
+
+	.en {
+		font-size: 1.5rem;
+	}
+	
+	.name p{
+		font-size: 2.5rem;
+	}
+
+	.name p::after {
+		font-size: 1rem;
+		width: 17px;
+		height: 17px;
+		right: -20px;
+		top: 6.5px;
+	}
+
+	.username {
+		font-size: 1.4rem;
+	}
+
+	header .openbtn {
+		display: none;
+	}
+
+	.real-contents p{
+		font-size: 1.3rem;
+		line-height: 1.8rem;
+	}
+}
+
+
+@media screen and (max-width:500px) {
+	
+	.logoimg {
+		height: 80px;
+		width: 80px;
+		top: -40px;
+	}
+
+	.logoimg img {
+		height: 80px;
+		width: 80px;
+	}
+
+}

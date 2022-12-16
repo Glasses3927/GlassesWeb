@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">タグ一覧 | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">Glässesのブログに関するタグ一覧ページです．</div>
+</div>
+  <div class="tcontents">
+    <h1 class="tname">{{ .Title }}</h1>
+    {{ if lt 0 (len .Site.Taxonomies.tags) }}
+      {{ if eq .Title "Tags"}}
+      <ul>
+        {{- range $termName, $entries := .Site.Taxonomies.tags }}
+        <li>{{ $termName }}
+          <ul>
+            {{- range $entries.Pages }}
+              <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            {{- end }}
+          </ul>
+        </li>
+        {{- end }}
+      </ul>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

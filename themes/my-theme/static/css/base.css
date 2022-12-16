@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #333;
+    font-size: 1.2rem;
+    font-family: 'Sawarabi Gothic', 'Noto Sans JP', Meiro, sans-serif, 'Hiragino Kaku Gothic ProN';
+    background-color: white;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: #303030;
+}
+
+
+
+
+
+/*以下，header部分*/
+
+
+
+
+
+header {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 1;
+	border: 1px solid rgb(230, 240, 240);
+}
+
+header ul li {
+	display: flex;
+	margin-left: 40px;
+	height: 50px;
+}
+
+.header_link {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	height: 50%;
+	text-align: right;
+	padding: 0 50px 0 0;
+	margin: 12px 0 12px 0;
+}
+
+.header_link li {
+	height: 100%;
+	padding: 5px 15px;
+	font-size: 1.2rem;
+	position: relative;
+}
+
+.header_link li a::after {
+	content: '';
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	height: 0.5px;
+	bottom: -0.7px;
+	background: gray;
+	transition: 0.3s;
+  transform: scale(0,1);
+  transform-origin: center top;
+}
+
+.header_link li a:hover::after {
+	transform: scale(1,1);
+}
+
+.header_logo {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	align-items: center;
+	vertical-align: middle;
+	height: 50px;
+}
+
+.header_logo li {
+	vertical-align: middle;
+	height: 30px;
+}
+
+.header_logo img {
+	height: 30px;
+}
+
+
+
+
+
+/*以下，footer部分*/
+
+
+
+
+
+.SNSlink {
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SNSlink a {
+	margin: 0 25px;
+}
+
+
+
+footer {
+	padding: 25px;
+	text-align: center;
+	background: #fff;
+}
+
+
+
+
+
+/*以下，レスポンシブ対応*/
+
+
+
+
+
+@media (max-width:840px) {
+
+	.header_link {
+		display: none;
+	}
+
+}
+
+
+
+@media (max-width:450px) {
+
+	.SNSlink a {
+		margin: 0 10px;
+	}
+
+	.header_logo li{
+		margin-left: 25px;
+	}
+
+}
+
+
+
+
+
+
+
+
+/*以下，button部分*/
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-sns {
+  font-size: 2.4rem;
+  line-height: 50px;
+
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  letter-spacing: 0;
+
+  color: #fff;
+  border-radius: 50%;
+}
+
+a.btn-sns:hover {
+  color: #fff;
+}
+
+a.btn-sns--twitter {
+  background: #1da1f2;
+}
+
+a.btn-sns--instagram {
+  background: #d6249f;
+  background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+a.btn-sns--youtube {
+  background: #cd201f;
+}
+
+a.btn-sns--other {
+	background: #808080;
+}
+  
+
+
+
+
+
+/*ナビゲーションウィンドウ用*/
+
+
+
+
+
+/*========= ぼかしのためのCSS ===============*/
+
+.mainblur{
+	filter: blur(8px);
+}
+
+
+/*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    position:fixed;
+	z-index: -1;
+	opacity: 0;/*はじめは透過0*/
+    /*ナビの位置と形状*/
+	top:0;
+	width:100%;
+    height: 100vh;/*ナビの高さ*/
+	background:rgba(255,255,255,0.8);/*背景を少し透過させる*/
+    /*動き*/
+	transition: all 0.3s;
+}
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+#g-nav.panelactive{
+	opacity: 1;
+	z-index:999;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    display: none;/*はじめは非表示*/
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#g-nav.panelactive ul {
+    display: block;
+}
+/*リストのレイアウト設定*/
+
+#g-nav li{
+	list-style: none;
+    text-align: center; 
+}
+
+#g-nav li a{
+	color: #333;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	right: 10px;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+	
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: #666;
+  	width: 45%;
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+	top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+
+
+@media screen and (min-width:840px) {
+
+	.openbtn {
+		display: none;
+	}
+
+}

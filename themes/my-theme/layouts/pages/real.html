@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div style="display: none;">
+	<div id="share-title">ホンネ | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">Glässesのつぶやきです．</div>
+</div>
+<section class="real">
+	<div class="real-theme">
+		<p class="en">Monology</p>
+		<p class="ja">独り言-雑記帳</p>
+	</div>
+	<div class="real-container">
+		<div class="backg"><img src="{{ .Site.BaseURL }}images/backg.jpg"></div>
+		<div class="logoimg"><img src="{{ .Site.BaseURL }}images/logo.png"></div>
+		<div class="name"><p>Glässes</p></div>
+		<div class="username"><p>@glasses3927</p></div>
+		<div class="caption"></div>
+		<div class="real-contents">
+			{{ .Content }}
+		</div>
+	</div>
+</section>
+
+{{ end }}

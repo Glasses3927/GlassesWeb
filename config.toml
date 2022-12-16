@@ -1,0 +1,18 @@
+baseURL = 'https://glasses-web.netlify.app/'
+languageCode = 'ja-jp'
+title = 'GlässesWeb'
+theme = 'my-theme'
+googleAnalytics = ""
+hasCJKLanguage = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.parser]
+            [markup.goldmark.parser.attribute]
+                block = true
+
+[outputs]
+    section = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+    posts = "/:sections/:slug/"
