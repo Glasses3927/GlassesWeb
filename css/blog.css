@@ -133,10 +133,12 @@
 	display: inline-block;
 }
 
-
-
-
-
+blockqoute {
+    quotes: none;
+    margin: 1rem 7rem;
+    padding: 0.5rem 1rem;
+    border-left: solid rgb(200,200,200) 10px;
+}
 
 .remark {
 	font-family: 'Noto Sans JP';
