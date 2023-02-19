@@ -1,11 +1,10 @@
 ---
-title: "Portfolio"
-type: "portfolio"
-layout: "portfolio"
----
+title: Portfolio
+layout: portfolio
 
+---
 {{< div class="inform" >}}
-Information : お知らせがあります．▶
+Information : 
 {{< anchor class="modal-open" href="#info" >}}
 旅に出ます
 {{< /anchor >}}
@@ -22,14 +21,14 @@ Information : お知らせがあります．▶
 
 |  見出し | 見出し |
 |--------|-------|
-| 時期 | 2023年 夏 ～ 2024年 春　|
-| 行先 | 鹿児島・福岡・大阪・京都・東京・アメリカ |
+| 時期 | 2023年 春 ～ 2024年 春　|
+| 行先 | その時のノリ |
 
-※とかほざいてますが，高校時代の友人と会うためです．会ってやってもいいよって方，連絡待ってます．時期が近づいたら，こちらからも連絡しますが笑
+日本の観光地等，募集してます．協力してくれる方は，以下のリンクからどうぞ！
 
-※「ここの景色やばい」「ここの日の出がきれいなんよな」「ここの紅葉めっちゃ綺麗やねん」「ここの桜，ばり綺麗やけん」などなど，おすすめのスポット等があれば募集しています．上記行先に記載がなくても，行く可能性アリ寄りのアリです．  
-
-連絡，お待ちしております^^
+{{< anchor class="modal-open" href="https://forms.gle/qZAYgBbKxGVi4hNy5" >}}
+協力者求む！！
+{{< /anchor >}}
 
 {{% /markdownify %}}
 {{< /div >}}
