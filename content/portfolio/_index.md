@@ -26,9 +26,7 @@ Information :
 
 日本の観光地等，募集してます．協力してくれる方は，以下のリンクからどうぞ！
 
-{{< anchor class="modal-open" href="https://forms.gle/qZAYgBbKxGVi4hNy5" >}}
-協力者求む！！
-{{< /anchor >}}
+[協力者求む！！](https://forms.gle/qZAYgBbKxGVi4hNy5)
 
 {{% /markdownify %}}
 {{< /div >}}
