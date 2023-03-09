@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     {{ else if eq .Layout "real" }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/real.css">
+    {{ else if eq .Layout "login" }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/login.css">
     {{ else if eq .Layout "blog" }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/blog.css">
     {{ else if eq .Layout "contact" }}

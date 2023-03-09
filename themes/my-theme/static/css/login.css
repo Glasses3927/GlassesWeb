@@ -1,0 +1,140 @@
+.login {
+    background-color: #F7F7F7;
+    min-height: 100vh;
+}
+
+.wrapper {
+/*    display: flex;
+    flex-direction: column;*/
+    margin: 0 auto;
+    max-width: 450px;
+    min-height: 100vh;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 80px 0 40px;
+}
+
+.form-wrapper {
+    background-color: white;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+    padding: 40px 40px 24px;
+    border-radius: 0.5rem;
+}
+
+.img-wrapper {
+    background: #ddd;
+    border-radius: 9999px;
+    height: 200px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+}
+
+.fixedimg img, .movingimg img{
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 15%;
+}
+
+.fixedimg {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+    transition: all 0.35s ease-in-out;
+}
+
+.movingimg {
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fixedimg.focus{
+    left: 0;
+}
+
+.movingimg.focus{
+    left: -105px;
+}
+
+#loginform h1{
+    font-size: 2.3rem;
+    margin-top: 0;
+    margin-bottom: 1.7rem;
+    padding-top: 0;
+    padding-bottom: 1.7rem;
+    color: rgba(0,0,0,.7);
+    font-weight: 600;
+    border-color: rgba(0,0,0,.1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.label {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgba(0,0,0,.9);
+    font-weight: 600;
+}
+
+#loginform input[type="text"]{
+    height: 38px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    resize: vertical;
+    background: white;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 2rem 1rem;
+    color: rgba(0,0,0,.7);
+    width: 100%;
+    border-radius: 0.7rem;
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+#loginform input[type="button"] {
+    background-color: #fff;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.09) 0%, rgba(17,17,17,0.04) 100%);
+    border: 1px solid rgba(22,22,22,0.20);
+    color: #000;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    margin: 1rem;
+    margin-left: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 0.7rem;
+    overflow: visible;
+    font-family: inherit;
+    line-height: 1.15;
+    cursor : pointer;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#loginform input[type="button"]:hover  {
+    background-color: #f3f3f3;
+}

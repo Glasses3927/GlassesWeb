@@ -1,0 +1,33 @@
+{{ define "main" }}
+<noscript><meta http-equiv="refresh" content="0; URL={{ .Site.BaseURL }}"></noscript>
+<div style="display: none;">
+	<div id="share-title">ログイン | Glässes's WEB</div>
+	<div id="share-url">{{ .RelPermalink }}</div>
+	<div id="share-text">ログインページです．サイトを閲覧するには，パスワードを送信してください．</div>
+</div>
+<section class="login">
+	<div class="wrapper">
+		<div class="description">
+			{{ .Content }}
+		</div>
+		<div class="form-wrapper">
+			<div class="img-wrapper">
+				<div class="fixedimg" id="moving01">
+					<img src="{{ .Site.BaseURL }}images/login01.png">
+				</div>
+				<div class="movingimg" id="moving02">
+					<img src="{{ .Site.BaseURL }}images/login02.png">
+				</div>
+			</div>
+			<form id="loginform">
+				<h1>Log In</h1>
+				<div>
+					<div class="label"><label for="pass">Password</label></div>
+					<input type="text" id="pass" name="keyword" required onfocus="passfocus();" onblur="passblur();" >
+				</div>
+				<input type="button" onclick="login()" value="LogIn">
+			</form>
+		</div>
+	</div>
+</section>
+{{ end }}
