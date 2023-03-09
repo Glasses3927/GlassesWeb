@@ -1,6 +1,5 @@
 ---
 title: "Glasses's Homepage"
-#draft: true
 ---
 
 {{< HP-about en="hope" ja="望み" sumen="Where is my place to stay?" sumja="私の居場所は何処．" >}}

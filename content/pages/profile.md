@@ -1,7 +1,7 @@
 ---
 title: Profile
+type: pages
 layout: profile
-
 ---
 {{< profile en="Profile" ja="プロフィール" >}}
 {{% markdownify %}}
@@ -88,9 +88,9 @@ layout: profile
 
 {{< thanks-content >}}
 {{% markdownify %}}
-嵐　　　　　めいちゃん　　　　　Gero　　　　　岡崎体育　　　　　夏代孝明　　　　　莉犬　　　　　40meterP　　　　　DECO*27
+嵐　　　　　めいちゃん　　　　　Gero　　　　　岡崎体育　　　　　夏代孝明　　　　　莉犬　　　　　40meterP　　　　　DECO*27　　　　　
 
-嵐　　　　　めいちゃん　　　　　Gero　　　　　岡崎体育　　　　　夏代孝明　　　　　莉犬　　　　　40meterP　　　　　DECO*27
+嵐　　　　　めいちゃん　　　　　Gero　　　　　岡崎体育　　　　　夏代孝明　　　　　莉犬　　　　　40meterP　　　　　DECO*27　　　　　
 
 嵐　　　　　めいちゃん　　　　　Gero　　　　　岡崎体育　　　　　夏代孝明　　　　　莉犬　　　　　40meterP　　　　　DECO*27　　　　　
 {{% /markdownify %}}
@@ -100,27 +100,27 @@ layout: profile
 {{% markdownify %}}
 　　　　　赤髮のとも　　　　　阿吽の二人組　　　　　日常組　　　　　らっだぁ　　　　　その他ゲーム実況者
 
-赤髮のとも　　　　　阿吽の二人組　　　　　日常組　　　　　らっだぁ　　　　　その他ゲーム実況者
+　　　　　赤髮のとも　　　　　阿吽の二人組　　　　　日常組　　　　　らっだぁ　　　　　その他ゲーム実況者
 
-赤髮のとも　　　　　阿吽の二人組　　　　　日常組　　　　　らっだぁ　　　　　その他ゲーム実況者
+　　　　　赤髮のとも　　　　　阿吽の二人組　　　　　日常組　　　　　らっだぁ　　　　　その他ゲーム実況者
 {{% /markdownify %}}
 {{< /thanks-content >}}
 
 {{< thanks-content >}}
 {{% markdownify %}}
-　　　ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師
+　　　ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師　　　
 
-ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師
+　　　ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師　　　
 
-ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師　　　
+　　　ヨビノリ　　　　　築館一英　　　　　笠原邦彦　　　　　小中高の先生方　　　　　有名予備校講師　　　
 {{% /markdownify %}}
 {{< /thanks-content >}}
 
 {{< thanks-content >}}
 {{% markdownify %}}
-瀬戸弘司　　　　　大川優介　　　　　はなおでんがん　　　　　恭一郎　　　　　すしらーめん【りく】　　　　　その他YouTube活動者
+瀬戸弘司　　　　　大川優介　　　　　はなおでんがん　　　　　恭一郎　　　　　すしらーめん【りく】　　　　　その他YouTube活動者　　　　　
 
-瀬戸弘司　　　　　大川優介　　　　　はなおでんがん　　　　　恭一郎　　　　　すしらーめん【りく】　　　　　その他YouTube活動者
+瀬戸弘司　　　　　大川優介　　　　　はなおでんがん　　　　　恭一郎　　　　　すしらーめん【りく】　　　　　その他YouTube活動者　　　　　
 
 瀬戸弘司　　　　　大川優介　　　　　はなおでんがん　　　　　恭一郎　　　　　すしらーめん【りく】　　　　　その他YouTube活動者　　　　　
 {{% /markdownify %}}
