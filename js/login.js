@@ -11,5 +11,10 @@ function passblur() {
 };
 
 function login() {
-    document.location = "../real?hoge=hoge";
+    var password = document.getElementById("pass").value;
+    if(password == "password"){
+        document.location = "../real?hoge=hoge";
+    } else {
+        alert("パスワードが間違っています．");
+    }
 }
