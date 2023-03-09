@@ -19,11 +19,11 @@
 					<img src="{{ .Site.BaseURL }}images/login02.png">
 				</div>
 			</div>
-			<form id="loginform">
+			<form id="loginform" onsubmit="return false;">
 				<h1>Log In</h1>
 				<div>
 					<div class="label"><label for="pass">Password</label></div>
-					<input type="text" id="pass" name="keyword" required onfocus="passfocus();" onblur="passblur();" >
+					<input type="text" id="pass" required onfocus="passfocus();" onblur="passblur();" >
 				</div>
 				<input type="button" onclick="login()" value="LogIn">
 			</form>
