@@ -5,6 +5,19 @@
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/reset.css>
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/base.css>
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/blog.css>
+<script type=text/javascript src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+        MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" }},
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": { matchFontHeight: false },
+            displayAlign: "left",
+            displayIndent: "2em"
+        });
+	</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWZM7PLK0H"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-LWZM7PLK0H')</script>
 <link rel=preconnect href=https://fonts.googleapis.com>
@@ -51,11 +64,14 @@
 <a href=https://glasses-web.netlify.app/posts/ class=return-btn><i class="fa-regular fa-circle-down fa-rotate-90"></i></a>
 <div class=post-title>受験物理教材</div>
 </div>
-<article>
+<details id=toc>
+<summary class=toc-title><i class="fa-solid fa-bars"></i></summary>
+</details>
+<article class=post-body>
 <h1 id=受験物理>受験物理</h1>
-<p>実は，受験対策用の物理のテキストを作ることが前からの夢だったりしてました．なので，少しずつではありますが，テキストを作成していきたいと思います．</p>
+<p>　実は，受験対策用の物理のテキストを作ることが前からの夢だったりしてました．なので，少しずつではありますが，テキストを作成していきたいと思います．</p>
 <p><a href=../../file/physics.pdf>受験のための高校物理</a></p>
-<p>わかりずらい点，意味不明な点，間違い等，見つけましたら連絡してくれるとありがたいです．</p>
+<p>　わかりずらい点，意味不明な点，間違い等，見つけましたら連絡してくれるとありがたいです．</p>
 <h2 id=更新履歴>更新履歴</h2>
 <table>
 <thead>
@@ -86,6 +102,9 @@
 <h2 id=追記>追記</h2>
 <ul>
 <li>図の作成にめちゃくちゃ時間がかかることがわかりました．図は後回しにします．(2022/12/2)</li>
+<li>MathJaxを導入しました．HTMLに直接LaTeXの数式が書けちゃいます．
+$$\sum_{k=1}^n k^2 = \frac{1}{6}n(n+1)(2n+1)$$
+いつ使うかわかりませんが，念のため実装しときました．(2023/3/11)</li>
 </ul>
 </article>
 </div>
@@ -110,5 +129,6 @@
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js></script>
 <script src=https://glasses-web.netlify.app/js/move.js></script>
+<script src=https://glasses-web.netlify.app/js/blog.js></script>
 </body>
 </html>

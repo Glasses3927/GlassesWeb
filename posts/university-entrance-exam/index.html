@@ -5,6 +5,19 @@
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/reset.css>
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/base.css>
 <link rel=stylesheet type=text/css href=https://glasses-web.netlify.app/css/blog.css>
+<script type=text/javascript src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type=text/x-mathjax-config>
+        MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" }},
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": { matchFontHeight: false },
+            displayAlign: "left",
+            displayIndent: "2em"
+        });
+	</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWZM7PLK0H"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-LWZM7PLK0H')</script>
 <link rel=preconnect href=https://fonts.googleapis.com>
@@ -51,7 +64,10 @@
 <a href=https://glasses-web.netlify.app/posts/ class=return-btn><i class="fa-regular fa-circle-down fa-rotate-90"></i></a>
 <div class=post-title>大学受験を経験して</div>
 </div>
-<article>
+<details id=toc>
+<summary class=toc-title><i class="fa-solid fa-bars"></i></summary>
+</details>
+<article class=post-body>
 <h2 id=何を言おうか>何を言おうか</h2>
 <p>さて，大学受験について長々と（上から目線で）語る前に，注意事項を書いておきます．上から目線が嫌いな人（例えば僕）はブラウザバックです．</p>
 <ul>
@@ -289,13 +305,13 @@
 <h2 id=ふぁーすといんぷれっしょん>ふぁーすと いんぷれっしょん</h2>
 <p>僕は，ずっと気に食わないことがありました．</p>
 <div class=remark>
-1.01の法則：1.01^365 = 37.8
+1.01の法則：$1.01^{365} = 37.8$
 </div>
 <div class=remark>
-0.99の法則：0.99^365 = 0.03
+0.99の法則：$0.99^{365} = 0.03$
 </div>
 <p>「なんやと．これは印象操作?! 」</p>
-<p>まず，それを法則と呼ばないで頂きたい．そして，=では無い．≒なら許す（ウザイやつ笑）．最後に，なぜ積なのか.</p>
+<p>まず，それを法則と呼ばないで頂きたい．そして，$=$では無い．$\fallingdotseq$なら許す（ウザイやつ笑）．最後に，なぜ積なのか.</p>
 <p>そんな簡単な計算で人の力を数値化出来ないのは前提として，なぜ和ではなく積を用いたのか．その点で印象操作だと思ってしまいます，必ず前日の1.01倍になる？本当にそうなんですか？1日勉強しなかっただけで，どれだけ他の日に頑張っても学力は0になってしまうなんてことはありません．（ここまで導入．長いのがモットー．）</p>
 <p>とはいえ，継続する重要性は確かにあります．僕はリスニングで経験しました．英検準一級を受ける際，どうにかリスニングの点数を上げたかったんです．その時，某英語教師に「毎日英語を聞いてみて」と言われました．その日以降，毎日数問ずつ問題を解いていきました．そしたら，日に日に点数が上がってきたのです．はじめて，あんな風に点数の伸びを体感しました．英語長文も，長い間離れると途端に読みづらくなる気がします．継続することは結構難しいですが，重要なんです．</p>
 <div class=remark>
@@ -359,5 +375,6 @@
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js></script>
 <script src=https://glasses-web.netlify.app/js/move.js></script>
+<script src=https://glasses-web.netlify.app/js/blog.js></script>
 </body>
 </html>
