@@ -23,6 +23,8 @@
 
 {{ if eq .Layout "portfolio" }}
 <script src="{{ .Site.BaseURL }}js/portfolio.js"></script>
+{{ else if eq .Section "posts" }}
+<script src="{{ .Site.BaseURL }}js/blog.js"></script>
 {{ else if eq .Layout "real" }}
 <script src="{{ .Site.BaseURL }}js/real.js"></script>
 {{ else if eq .Layout "login" }}

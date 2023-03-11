@@ -12,8 +12,11 @@
     <div class="post-toptitle">
         <a href="{{ .Site.BaseURL }}posts/" class="return-btn"><i class="fa-regular fa-circle-down fa-rotate-90"></i></a>
         <div class="post-title">{{ .Title }}</div>
-   </div>
-    <article>
+    </div>
+    <details id="toc">
+        <summary class="toc-title"><i class="fa-solid fa-bars"></i></summary>
+    </details>
+    <article class="post-body">
         {{ .Content }}
     </article>
 </div>
