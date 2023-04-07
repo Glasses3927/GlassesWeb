@@ -36,7 +36,7 @@
 }
 
 .portfolio-list {
-	width: 50vw;
+/*	width: 50vw;*/
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -48,7 +48,7 @@
 	height: 200px;
 	margin: 0.5rem;
 }
-
+/*
 .portfolio-detail-wrap {
 	right: 0;
 	width: 50vw;
@@ -136,7 +136,7 @@
 	line-height: 380px;
 	z-index: 1;
 }
-
+*/
 
 
 
@@ -239,10 +239,10 @@
 		margin: auto;
 	}
 
-	.comingsoon {
+/*	.comingsoon {
 		height: 260px;
 		line-height: 260px;
-	}
+	}*/
 	
 	.portfolio-list {
 		width: 70vw;
@@ -277,10 +277,10 @@
 		width: 7rem;
 	}
 	
-	.comingsoon {
+/*	.comingsoon {
 		height: 240px;
 		line-height: 240px;
-	}
+	}*/
 
 }
 
@@ -300,8 +300,8 @@
 		padding: 30px 20px;
 	}
 
-	.comingsoon {
+/*	.comingsoon {
 		margin-top: 15px;
-	}
+	}*/
 
 }
