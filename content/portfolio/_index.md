@@ -10,6 +10,10 @@ Information :
 {{< /anchor >}}
 {{< /div >}}
 
+{{< div class="inform" >}}
+画像サイズを縮小しているため，画像が荒く見えることがあります．
+{{< /div >}}
+
 {{< div id="info" >}}
 {{% markdownify %}}
 
