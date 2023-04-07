@@ -10,21 +10,21 @@
 		<p class="ja">ポートフォリオ</p>
 	</div>
 	<div>{{ .Content }}</div>
-	<div class="comingsoon">COMING SOON</div>
+<!--<div class="comingsoon">COMING SOON</div>-->
 	<div class="portfolio-wrap">
 		<div class="portfolio-list">
 			{{- range .Page.Resources }}
 				<img src="{{ .RelPermalink }}" onclick="showimage({{ .RelPermalink }})">
 			{{- end }}
 		</div>
-		<div class="portfolio-detail-wrap" id="portfolio-detail-wrap">
+<!--	<div class="portfolio-detail-wrap" id="portfolio-detail-wrap">
 			<div class="portfolio-detail">
 				<button type="button" onclick="deletedetail()"></button>
 				<div class="image none" id="sample-image"><img src="{{ .Site.BaseURL }}images/portfolio/150x200.png" alt="sample"></div>
-				<div class="image" id="detail-image"><img src="{{ .Site.BaseURL }}images/portfolio/150x200.png"></div>
-				<div class="caption" id="detail-caption">左の画像一覧から選んでください．</div>
+				<div class="image" id="detail-image"></div>
+				<div class="caption" id="detail-caption"></div>
 			</div>
-		</div>
+		</div>-->
 	</div>
 </section>
 {{ end }}
