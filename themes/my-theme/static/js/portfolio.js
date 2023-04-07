@@ -29,7 +29,7 @@ after_close:function(){// モーダルが閉じた後に行う動作
 function deletedetail() {
 	document.getElementById("sample-image").classList.remove("none");
 	document.getElementById("detail-image").classList.add("none");
-	document.getElementById("detail-caption").innerHTML = 'YYYY-MM-DD撮影．<br>左の画像一覧から画像をクリックすると，ここに詳細が表示されます．'
+	document.getElementById("detail-caption").innerHTML = ''
 }
 
 function showimage(link) {
