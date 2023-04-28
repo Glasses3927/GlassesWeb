@@ -1,3 +1,19 @@
+
+//日本地図svg表示
+
+const map = "../portfolio/map-full.svg"
+const container = document.querySelector( '#map' )
+
+async function csvfunc() {
+	const res = await fetch(map);
+	const svg = await res.text();
+	container.innerHTML = svg;
+	const prefs = document.querySelectorAll( '.geolonia-svg-map .prefecture' );
+}
+
+csvfunc();
+
+
 //初回のみモーダルをすぐ出す判定。flagがモーダル表示のstart_open後に代入される
 
 var access = $.cookie('access')
@@ -21,31 +37,3 @@ after_close:function(){// モーダルが閉じた後に行う動作
 	$('html').css('overflow-y','scroll');/*縦スクロールバーを出す*/
 }
 });
-
-
-
-//ポートフォリオサイト
-
-function deletedetail() {
-	document.getElementById("sample-image").classList.remove("none");
-	document.getElementById("detail-image").classList.add("none");
-	document.getElementById("detail-caption").innerHTML = ''
-}
-
-function showimage(link) {
-	document.getElementById("sample-image").classList.add("none");
-	document.getElementById("detail-image").classList.remove("none");
-	document.getElementById("detail-image").innerHTML = '<img src="' + link + '">';
-}
-
-resizeWindow();
-
-window.addEventListener('resize', resizeWindow);
-function resizeWindow() {
-	var iw = window.innerWidth;
-	if (iw < 600) {
-		document.getElementById("portfolio-detail-wrap").classList.add("none");
-	} else {
-		document.getElementById("portfolio-detail-wrap").classList.remove("none");
-	}
-};
