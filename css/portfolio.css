@@ -53,6 +53,10 @@
 	margin: 0.5rem;
 }
 
+.portfolio-list img:hover {
+	cursor: pointer;
+}
+
 /*-----------------------*/
 
 /*infoエリアをはじめは非表示*/
