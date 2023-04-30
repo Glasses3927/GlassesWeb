@@ -16,14 +16,17 @@ csvfunc();
 
 //Instagram表示
 
+const url_enc = 'U2FsdGVkX18IBOVC/JxnyX7tvjZY5LT8EAtb6GMx9PhUj2Q+bGUy1hb5K/Xt04i5nAmHYmrE0j3pYzKIxHHv3rm2j98n/WMZwJCnxnQQI366QVLR1s2F2pAwVUZDrsjyxrpSYOx/TbptaefBxUiBEYbaP/QkdKsfJabbHilO4WvLhnkiTJPru6n8rOaCWvFIKetynbgt91NrECm39rq0GHJ3/bcvqRvKZ0Tvb3otRvxACIsHGIJkDb+SHCHjNbbrvR7ZD5tlV3PXUb7KoAMPoMZwnZ9KGvQa8GyGXoCiniPSo1iRSiZnwhCJChjbbZASm6Vsw4Ym79YOQhuRE37I5f9xGlmXC8dj/R7PabWCbRg=';
+const url_dec = CryptoJS.AES.decrypt(url_enc, "pass").toString(CryptoJS.enc.Utf8);
+
 (function ($) {
     $.ajax({  // jQueryのajaxでjsonデータを取得
         type: 'GET',
-        url: 'https://graph.facebook.com/v13.0/17841459095674512?fields=name,media{caption,like_count,media_url,permalink,timestamp,username,thumbnail_ur,thumbnail_url,comments_count,media_type}&access_token=EAANaF1uKnkkBAJLpsu4Ii8KlQaQfxbXhNjWNYZBHCZCcgLwK2t8xIRzDkkjZA6n2ZA0ZBWA9T9oUcZAMf8sNDNizoUlKohAU9QSc8y7F08SS1b8bAa5GJrt9kogEa7nGw3iXgPOqK1KPffLSlVQrgT64ENzOpzvPOw54g7Rfqs4UQiGeJfVLFE',
+        url: url_dec,
         dataType: 'json',　
         success: function (json) {
-            var insta = json.media.data;
-            for (var i = 0; i < 6; i++) {
+            var insta = json.data;
+            for (var i = 0; i < json.data.length; i++) {
             	let url = insta[i].media_url; // 投稿メディアのURLを取得
         		let href = insta[i].permalink; // 投稿URLを取得
             	let caption = insta[i].caption; //　投稿のキャプションを取得
