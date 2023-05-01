@@ -32,7 +32,7 @@ const url_dec = CryptoJS.AES.decrypt(url_enc, "pass").toString(CryptoJS.enc.Utf8
             	let caption = insta[i].caption; //　投稿のキャプションを取得
             	if(url.indexOf('.mp4') <= 0){ // .mp4以外
             		$('.portfolio-list').append(`
-<img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')">
+<img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
             		`);
 				}
             }
