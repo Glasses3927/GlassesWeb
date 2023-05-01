@@ -164,10 +164,7 @@
 	}
 	
 	.portfolio-list img{
-		flex-grow: 1;
-		object-fit: cover;
-		height: 200px;
-		margin: 0.5rem;
+		height: 150px;
 	}
 
 }
