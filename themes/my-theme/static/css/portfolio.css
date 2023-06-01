@@ -15,6 +15,7 @@
 }
 
 .PF-description {
+	padding: 0 50px;
     display: block;
     width: 100%;
     min-height: 100vh;
@@ -52,7 +53,7 @@
     font-size: 6rem;
     font-family: 'Montserrat';
     color: white;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
 	text-align: center;
 }
 
@@ -177,6 +178,14 @@
 	display: none;
 }
 
+@media screen and (max-width:800px) {
+	.code001 {
+		font-size: 4rem;
+	}
+	.code002 {
+		font-size: 1.75rem;
+	}
+}
 
 
 @media screen and (max-width:600px) {
