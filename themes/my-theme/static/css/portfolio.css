@@ -19,16 +19,18 @@
     display: block;
     width: 100%;
     min-height: 100vh;
+    background-image: url("../images/PFtop.JPG");
 	overflow: hidden;
 	position: relative;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	z-index: 0;
 }
 
 .PF-description:before {
 	content: '';
-    background-image: url("../images/PFtop.JPG");
-	background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+	background: inherit;
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
@@ -177,6 +179,10 @@
 }
 
 @media screen and (max-width:800px) {
+	
+	.PF-description {
+		background-attachment: scroll;
+	}
 	.code001 {
 		font-size: 4rem;
 	}
