@@ -19,18 +19,16 @@
     display: block;
     width: 100%;
     min-height: 100vh;
-    background-image: url("../images/PFtop.JPG");
 	overflow: hidden;
 	position: relative;
-	background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-	z-index: 0;
 }
 
 .PF-description:before {
 	content: '';
-	background: inherit;
+    background-image: url("../images/PFtop.JPG");
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
