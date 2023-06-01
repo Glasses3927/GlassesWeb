@@ -257,13 +257,14 @@ blockquote {
 	margin-left: 10px;
 	margin-bottom: 50px;
 	font-family: 'Noto Serif JP';
-	font-weight: 600;
+	font-weight: 900;
 }
 
 .en {
 	letter-spacing: 0rem;
 	font-size: 1.75rem;
 	font-family: 'Noto Serif JP';
+	font-weight: 900;
 }
 
 .blog-content {

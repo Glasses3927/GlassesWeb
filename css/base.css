@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body{
-    color: #333;
-    font-size: 1.2rem;
-    font-family: 'Sawarabi Gothic', 'Noto Sans JP', Meiro, sans-serif, 'Hiragino Kaku Gothic ProN';
-    background-color: white;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 'Sawarabi Gothic', 'Noto Sans JP', Meiro, sans-serif, 'Hiragino Kaku Gothic ProN';
+  background-color: white;
 }
 
 *, *::before, *::after {
@@ -260,16 +260,16 @@ a.btn-sns--other {
 
 #g-nav::before{
 	content: "";
-    position: fixed;
-    right: 0;
-    top: 0;
-    border-radius: 50%;
-    background-color: #444;
-    width: 40px;
-    height: 40px;
-    transform: translate(50%,-50%) scale(0);
-    z-index: 10;
-    transition-duration: .5s;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #444;
+  width: 40px;
+  height: 40px;
+  transform: translate(50%,-50%) scale(0);
+  z-index: 10;
+  transition-duration: .5s;
 }
 
 #g-nav.panelactive::before{
@@ -278,34 +278,43 @@ a.btn-sns--other {
 
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list{
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 999; 
-    width: 100%;
-    height: 100vh;/*表示する高さ*/
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /*ナビゲーション*/
 #g-nav ul {
-    display: none;/*はじめは非表示*/
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+  display: none;/*はじめは非表示*/
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 #g-nav.panelactive ul {
-    display: block;
+  display: block;
+  animation: appear .5s ease;
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 /*リストのレイアウト設定*/
 
 #g-nav li{
 	list-style: none;
-    text-align: center; 
+  text-align: center; 
 }
 
 #g-nav li a{
@@ -322,23 +331,23 @@ a.btn-sns--other {
 /*========= ボタンのためのCSS ===============*/
 .openbtn{
 	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
+  z-index: 9999;/*ボタンを最前面に*/
 	right: 10px;
 	cursor: pointer;
-    width: 50px;
-    height:50px;
+  width: 50px;
+  height:50px;
 }
 	
 /*×に変化*/	
 .openbtn span{
-    display: inline-block;
-    transition: all .4s;
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
 	background-color: #666;
-  	width: 45%;
+  width: 45%;
 }
 
 .openbtn.active span{
@@ -358,10 +367,10 @@ a.btn-sns--other {
 }
 
 .openbtn.active span:nth-of-type(1) {
-    top: 18px;
-    left: 18px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 30%;
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
 }
 
 .openbtn.active span:nth-of-type(2) {
@@ -369,10 +378,10 @@ a.btn-sns--other {
 }
 
 .openbtn.active span:nth-of-type(3){
-    top: 30px;
-    left: 18px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 30%;
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
 }
 
 

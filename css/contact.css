@@ -18,7 +18,7 @@
 	letter-spacing: 0.5rem;
 	font-size: 3.5rem;
 	font-family: 'Noto Serif JP';
-	font-weight: 600;
+	font-weight: 900;
 	text-align: center;
 	margin-bottom: 100px;
 }
@@ -28,6 +28,7 @@
 	font-size: 1.75rem;
 	font-family: 'Noto Serif JP';
 	text-align: center;
+	font-weight: 900;
 }
 
 .contact-content{
