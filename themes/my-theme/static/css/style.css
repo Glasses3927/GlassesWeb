@@ -15,24 +15,23 @@
     width: 100%;
     min-height: 100vh;
     background-image: url("../images/pc_and_note.jpg");
+	position: relative;
+	overflow: hidden;
 	opacity: 0.8;
     background-position: center;
     background-size: cover;
+	z-index: 0;
 }
 
 .HP-description:before {
 	content: '';
 	background: inherit;
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
 	filter: blur(5px);
 	position: absolute;
-	top: 5px;
-	left: 0;
-	right: 0;
-	bottom: 5px;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
 	z-index: -1;
 }
 
