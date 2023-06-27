@@ -78,8 +78,9 @@ layout: profile
 {{< profile en="Certification" ja="資格等" >}}
 {{% markdownify %}}
 
-* 英検準一級
+* 英検準一級（2020/10,11・2020年第2回）
 * 第三級アマチュア無線技士
+* TOEIC R&L 940（2023/6/10・第325回）
 
 {{% /markdownify %}}
 {{< /profile >}}
