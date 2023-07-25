@@ -27,7 +27,6 @@ function loop(insta){
 	$('.portfolio-list').append(`
 <img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 		`);
-	}
 }
 
 (function ($) {
