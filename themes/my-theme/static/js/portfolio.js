@@ -17,16 +17,17 @@ csvfunc();
 //Instagram表示
 
 //CryptoJS.AES.encrypt(here, "pass").toString();
-const url_enc = 'U2FsdGVkX18XC0H8h6nbwLfOfd5yxUlnVx5yxjdagWxQ3y+mmJxYA/r3hlwdmcEajBPbOoZjjcMrdrlxnRowSaA8k3p2xOCp1kmpmLZi24MKtzk63/8Of2CKYpwQS2qId+ZdMZ0jKDIRr+pshIXaIafJyJSfXozGC+hHRjUN01oK1DRaYSsSxQOE4asMgQnfgjyNoAHsEEPbUU6nRWRRCIQxlGL6jebEsgvFTmSfHbjZ5CfsWizxGelgyRHH7vWw8mDXs3XwBLfhbr6LDnRpJx21zUTBSEJH4xSFSow8fr2ZIBzMaDsd2MoY88lX3N+KCTYf7W2OVS1nU/yVz/6BlbFfrE3M7Gl7h6dJeNylP4M3iHzt62a+qaheoPWo2YFD';
+const url_enc = 'U2FsdGVkX1+yAU9eX54v1CpqaTELkI3OtHMCZG/oqBo2c5Aomn41Mt2UKIhWOSuuAbPN3DaUgBWCCcUqUrD9J4klDGGQZOcQ3ENSkmXS2XJnspKeSkZIXBaSoaj8el1opocSB1uNTVwM9eS1YtLt6SKKMviELgN4I8hdltTKBzESg7l/QU0ocypNC8DkqckVOj0q+rQ3f48rVnk7QyX4M1xVKS/CAIYuuwGNyjIuKXMOc9k+d1jXZMO4sRTg475kOYYhPN+Dy5XGq4VQhNcfh+gdKjirsIFDOIH637EYK9b7GMSvyj8WKMNKynZRHBFDMolvx4a1SEZ8ymQH/M+g0CuPCgvdmKCsuZD63Sya8H/zvXW7slqUt52TEZNSS5wEVXKy8IWfq1vbOw3d2VygLw==';
 const url_dec = CryptoJS.AES.decrypt(url_enc, "pass").toString(CryptoJS.enc.Utf8);
 
 function loop(insta){
 	let url = insta.media_url; // 投稿メディアのURLを取得
 	let href = insta.permalink; // 投稿URLを取得
 	let caption = insta.caption; //　投稿のキャプションを取得
-	$('.portfolio-list').append(`
-<img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
-		`);
+	if(url.indexOf('.mp4') > 0){ // .mp4
+		url = insta.thumbnail_url;
+	}
+	$('.portfolio-list').append(`<img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">`);
 }
 
 (function ($) {
