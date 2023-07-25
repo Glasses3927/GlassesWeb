@@ -24,8 +24,7 @@ function loop(insta){
 	let url = insta.media_url; // 投稿メディアのURLを取得
 	let href = insta.permalink; // 投稿URLを取得
 	let caption = insta.caption; //　投稿のキャプションを取得
-	if(url.indexOf('.mp4') <= 0){ // .mp4以外
-		$('.portfolio-list').append(`
+	$('.portfolio-list').append(`
 <img src="${url}" alt="${caption}" onclick="gotoinsta('${href}')" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;">
 		`);
 	}
