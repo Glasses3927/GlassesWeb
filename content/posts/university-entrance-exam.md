@@ -1,5 +1,6 @@
 ---
 title: 大学受験を経験して
+draft: true
 slug: university-entrance-exam
 date: 2022-09-14T22:48:50.000+09:00
 tags:
