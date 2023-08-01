@@ -1,5 +1,6 @@
 ---
 title: 感動
+draft: true
 slug: impression
 date: 2022-12-08T18:30:00.000+09:00
 tags: []
