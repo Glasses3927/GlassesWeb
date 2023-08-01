@@ -17,7 +17,8 @@ csvfunc();
 //Instagram表示
 
 //CryptoJS.AES.encrypt(here, "pass").toString();
-const url_enc = 'U2FsdGVkX1+yAU9eX54v1CpqaTELkI3OtHMCZG/oqBo2c5Aomn41Mt2UKIhWOSuuAbPN3DaUgBWCCcUqUrD9J4klDGGQZOcQ3ENSkmXS2XJnspKeSkZIXBaSoaj8el1opocSB1uNTVwM9eS1YtLt6SKKMviELgN4I8hdltTKBzESg7l/QU0ocypNC8DkqckVOj0q+rQ3f48rVnk7QyX4M1xVKS/CAIYuuwGNyjIuKXMOc9k+d1jXZMO4sRTg475kOYYhPN+Dy5XGq4VQhNcfh+gdKjirsIFDOIH637EYK9b7GMSvyj8WKMNKynZRHBFDMolvx4a1SEZ8ymQH/M+g0CuPCgvdmKCsuZD63Sya8H/zvXW7slqUt52TEZNSS5wEVXKy8IWfq1vbOw3d2VygLw==';
+//https://graph.instagram.com/me/media?fields=id,caption,media_url,children{media_url},permalink,thumbnail_url&access_token=
+const url_enc = 'U2FsdGVkX1/8OqDva9r1OlyCcf5k+f68C3nZEoZqvn7CUGTIsHj6OM5uxBkpbhDVcRg7O4SzS/c8lhZFbefT0gDHOB2YI5mJmxJirjiDIiFia8XOvEk5hhuw/YHvMWgZ+7QuMqBJWr/jOHmtDHKLN+FhTkGNjN3CTk99H1JqRU8EXDlZQEVJsYbWMkipS6nlRvaWv9xJWkvxb9x5WbnXeanMkIrWtFeFKS+RcOJK85515uqRa62X6dN5STOQkNvkvRxF1XMCaUeXA1QaFkUwL9fPmHONqYITM1baTKAfTTPr4zGyPRbuCfTFRcta0vRjMksL38o+yl2VxUOa6SUuDuiUAkaKuNrsJQwpVNqGRqZth5fIokDIauZf0fWWCbvc1wWZkkoTl91ewrFHfrgaUA==';
 const url_dec = CryptoJS.AES.decrypt(url_enc, "pass").toString(CryptoJS.enc.Utf8);
 
 function loop(insta){
