@@ -1,5 +1,6 @@
 ---
 title: "共通テスト2022を受けて"
+draft: true
 slug: common-test
 date: 2022-03-24T22:48:50+09:00
 tags: [ study ]
