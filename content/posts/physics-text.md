@@ -1,5 +1,6 @@
 ---
 title: 受験物理教材
+draft: true
 slug: physics-text
 date: 2022-11-28T22:17:00.000+09:00
 tags:
