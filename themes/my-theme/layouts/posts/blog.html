@@ -9,9 +9,9 @@
 		<p class="en">Blog</p>
 		<p class="ja">ブログ</p>
 	</div>
+	{{ .Content }}
     {{ range .Pages }}
 	<div class="blog-content">
-		{{ .Content }}
         <div class="post">
             <div class="date">{{ .Date.Format "2006-01-02" }}</div>
             {{ with .Params.tags }}{{ range . }} <a class="tag" href="/tags/"><p>#{{ . }}</p></a>{{ end }}{{ end }}
